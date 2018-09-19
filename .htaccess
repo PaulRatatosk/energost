@@ -8,5 +8,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)$ index.php
-ErrorDocument 404 "<H1>ERROR 404 and this page not found</H1>
+ErrorDocument 404 /404.php
 php_flag display_errors 1
