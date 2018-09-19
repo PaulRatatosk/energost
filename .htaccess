@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php
+ErrorDocument 404 "<H1>ERROR 404 and this page not found</H1>
+php_flag display_errors 1
